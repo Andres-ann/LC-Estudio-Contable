@@ -1,0 +1,101 @@
+:root {
+  --main-bg-color: #021e34;
+  --main-bg-color-secundario: #184271;
+  --main-color-titulo: #13cddb;
+  --main-color-subtitulo: #3884b2;
+  --main-color-muted: #9cc1d1;
+  --main-color-enfasis: #138b8e;
+  --main-color-link: #d1dee4;
+}
+
+html {
+  scroll-behavior: smooth; /* Requerido para scroll-up */
+}
+
+/* Banner principal */
+
+#main_nav {
+  background-color: var(--main-bg-color);
+  color: var(--main-color-enfasis);
+}
+
+#banner-principal {
+  background-image: url(../images/bg-banner.svg);
+}
+
+#banner-principal h1 {
+  color: var(--main-color-titulo);
+}
+
+#banner-principal p {
+  color: var(--main-color-link);
+}
+
+#banner-principal img{
+    padding: 0 3rem;;
+}
+
+/* Por que elegirnos */
+
+#por-que-elegirnos h4 {
+  color: var(--main-color-enfasis);
+}
+
+#por-que-elegirnos p {
+  color: var(--main-bg-color);
+}
+
+.divisor-de-seccion {
+  background-color: var(--main-bg-color);
+  padding: 2.5rem;
+}
+
+.divisor-de-seccion h3 {
+  color: var(--main-color-titulo);
+}
+
+/* Sevicios */
+
+#servicios a {
+  text-decoration: none;
+}
+.img-service {
+  padding: 1rem;
+  align-self: center;
+  height: 150px;
+}
+
+.card-title {
+  color: var(--main-bg-color-secundario);
+}
+
+/* Boton Ir Arriba */
+
+.button-up {
+  padding: 0.5rem 1rem;
+  background: var(--main-bg-color);
+  color: #fff;
+  font-weight: 900;
+  font-size: 2rem;
+  cursor: pointer;
+  position: fixed;
+  border: none;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+  transition: all 300ms ease;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--main-bg-color);
+}
+
+.footer-img {
+    width: 250px;
+}
+
+.footer-link-img {
+    width: 120px;
+}

@@ -1,28 +1,553 @@
 <!doctype html>
 <html lang="es">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="assets/icons/favicon.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="assets/icons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo-1.jpg" />
 
-    <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Bootstrap & CSS Styles -->
+    <link href="assets/css/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/aos.css" />
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
 
     <title>LC Estudio Contable</title>
-  </head>
-  <body>
-    <h1>Hola Mundo!</h1>
+</head>
+
+<body>
+    <!------------------------------ Inicio del header -->
+    <nav class="navbar navbar-expand-lg shadow" id="main_nav">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <a class="navbar-brand p-3 p-sm-3" href="#">
+                <img src="assets/images/logo-3.jpg" class="rounded" alt="Logo" width="50" height="50">
+            </a>
+
+            <!-- Menu hamburguesa -->
+            <button class="navbar-toggler navbar-dark text-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Inicio de las opciones del menu -->
+            <div class="align-self-center collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" aria-current="page" href="#">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" href="#">SOBRE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" href="#servicios">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" href="#precios">PRECIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" href="#contacto">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Fin de las opciones del menu -->
+        </div>
+    </nav>
+    <!------------------------------ Fin del header -->
+
+    <!------------------------------ Banner -->
+    <div class="container-fluid">
+        <div class="row align-items-center p-3 shadow" id="banner-principal">
+            <div class="col-12 col-sm-6 ps-sm-4" data-aos="zoom-in">
+
+                <h1 class="display-3 text-bold">LC Estudio Contable</h1>
+
+                <p class="fs-3 fs-lg-2 text-light">Cuidamos tu negocio junto a vos,</p>
+
+                <p class="fs-5">ofrecemos soluciones contables a cada una de tus necesidades.</p>
+
+                <a type="button" class="btn btn-secondary rounded-pill mb-4" href="#contacto">Contactar</a>
+            </div>
+            <div class="col-12 col-sm-6 p-sm-4" data-aos="zoom-in">
+                <img src="assets/images/banner-ilustration.svg" class="img-fluid mx-auto d-block" alt="...">
+            </div>
+        </div>
+    </div>
+    <!------------------------------ Fin Banner -->
+
+    <!------------------------------ Contenido principal -->
+
+    <!-- Seccion Por que elegirnos -->
+    <div class="container">
+        <section class="ms-4 me-4 ms-sm-0 me-sm-0" id="por-que-elegirnos" data-aos="fade-up">
+            <div class="col-12 p-3 text-center">
+                <h3 class="display-4 mb-4 mt-4">Por qué elegirnos</h3>
+            </div>
+
+            <div class="row">
+                <div class="d-flex col-12 col-sm-6 mt-2 mb-5 justify-content-center" data-aos="flip-left">
+                    <div class="card p-5 col-12 col-sm-11 align-content-center shadow">
+                        <h4><i class='bx bxs-user-account me-2'></i>EFICIENCIA</h4>
+                        <p>Somos un equipo experimentado y con amplia experiencia en materia contable.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex col-12 col-sm-6 mt-2 mb-5 justify-content-center" data-aos="flip-left">
+                    <div class="card p-5 col-12 col-sm-11 align-content-center shadow">
+                        <h4><i class='bx bx-donate-heart me-2'></i>PROFESIONALIDAD</h4>
+                        <p>Brindamos servicios impositivos, laborales y contables, con profesionalidad y compromiso.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex col-12 col-sm-6 mt-2 mb-5 justify-content-center" data-aos="flip-left">
+                    <div class="card p-5 col-12 col-sm-11 align-content-center shadow">
+                        <h4><i class='bx bx-target-lock me-2'></i>SERVICIOS ONLINE</h4>
+                        <p>Trabajamos online para todo el país. Así seas empresa o monotributista, contamos con un plan
+                            a tu
+                            medida.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex col-12 col-sm-6 mt-2 mb-5 justify-content-center" data-aos="flip-left">
+                    <div class="card p-5 col-12 col-sm-11 align-content-center shadow">
+                        <h4><i class='bx bxs-flask me-2'></i>FLEXIBILIDAD</h4>
+                        <p>Nos adaptamos a tus necesidades, asesoramos y acompañamos a nuestros clientes en todo
+                            momento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Fin Seccion Por que elegirnos-->
+
+    <!-- Divisor de seccion -->
+    <div class="container-fluid divisor-de-seccion text-light text-center shadow mt-5" data-aos="zoom-in">
+        <div class="p-4">
+            <h3 class="fw-light fs-2">LA MEJOR ATENCIÓN A PRECIOS ACCESIBLES</h3>
+            <p class="p-sm-4">Soluciones Contables a Comerciantes, Profesionales, Pymes y Empresas Medianas.</p>
+        </div>
+    </div>
+    <!-- Fin Divisor de seccion -->
+
+    <!-- Seccion Servicios -->
+    <div class="container">
+        <section id="servicios">
+            <div class="col-12 text-center">
+                <header>
+                    <h3 class="display-4 mt-4" data-aos="fade-right">Nuestros servicios</h3>
+                </header>
+
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-4 m-5 m-md-0 g-4" data-aos="flip-right">
+
+                <div class="col rounded">
+                    <a href="#">  rounded
+                        <div class="card shadow">
+                            <img src="assets/images/servicio-1.svg" class="img-service card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">IMPOSITIVOS</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col rounded">
+                    <a href="#">
+                        <div class="card shadow">
+                            <img src="assets/images/servicio-2.svg" class="img-service card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">LABORALES</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col rounded">
+                    <a href="#">
+                        <div class="card shadow">
+                            <img src="assets/images/servicio-3.svg" class="img-service card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">SOCIETARIOS</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col rounded">
+                    <a href="#">
+                        <div class="card shadow">
+                            <img src="assets/images/servicio-4.svg" class="img-service card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">CONTABLES</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col rounded">
+                    <a href="#">
+                        <div class="card shadow">
+                            <img src="assets/images/servicio-5.svg" class="img-service card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">CONSORCIOS</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col rounded">
+                    <a href="#">
+                        <div class="card shadow">
+                            <img src="assets/images/servicio-6.svg" class="img-service card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">AUITORÍAS CONTABLES</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col rounded">
+                    <a href="#">
+                        <div class="card shadow">
+                            <img src="assets/images/servicio-7.svg" class="img-service card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">CERTIFICACIONES</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col rounded">
+                    <a href="">
+                        <div class="card shadow">
+                            <img src="assets/images/servicio-todos.svg" class="img-service card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-danger">VER MÁS</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Seccion Servicios -->
+
+        <!-- Seccion Precios -->
+        <section class="container mt-5" id="precios">
+
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+
+                <h3 class="display-4 mb-4">Packs emprendedores</h3>
+
+                <p class="fs-5 text-muted">Brindamos un servicio que te permitirá tener todos tus impuestos al día, de
+                    forma simple y rápida, con asesoramiento de calidad y a precios muy convenientes.</p>
+            </div>
+
+            <!-- Inico plan packs emprendedores -->
+            <div class="row row-cols-1 row-cols-md-3 mb-3 m-2 m-md-0 text-center" data-aos="zoom-in">
+                <!-- Card 1 -->
+                <div class="col mt-3">
+                    <div class="card mb-4 rounded-3 shadow">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Monotributistas</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title display-5 fw-normal">$3.000<small
+                                    class="text-muted fw-light">/mes</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Alta monotributo</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Comenzar ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">StartUps</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title display-4 fw-normal">$4.500<small
+                                    class="text-muted fw-light">/mes</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Alta monotributo</li>
+                                <li>Alta monotributo</li>
+                                <li>Alta monotributo</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Comenzar ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col mt-3">
+                    <div class="card mb-4 rounded-3 shadow">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Pymes</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title display-5 fw-normal">$2.500<small
+                                    class="text-muted fw-light">/mes</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Alta monotributo</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                                <li>Ingresos Brutos</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Comenzar ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Fin Plan packs emprendedores -->
+        </section>
+    </div>
+    <!-- Fin Seccion Precios -->
+
+    <!-- Divisor de seccion -->
+    <div class="container-fluid divisor-de-seccion text-light text-center shadow mt-5" data-aos="zoom-in">
+        <div class="p-4">
+            <h3 class="fw-light fs-2">BRINDAMOS SOLUCIONES PARA CADA TIPO DE NECESIDAD</h3>
+            <p class="p-sm-5">Ofrecemos a nuestros clientes un asesoramiento integro, competente y personalizado en
+                todos los asuntos que requieran sus negocios para cumplir con sus obligaciones y alcanzar de manera
+                eficiente sus objetivos.</p>
+        </div>
+    </div>
+    <!-- Fin Divisor de seccion -->
+
+    <!-- Formulario de Contacto -->
+    <div class="container-fluid" id="contacto">
+        <header>
+            <h3 class="display-4 p-4 text-center">Envianos un mensaje</h3>
+        </header>
+        <div class="row m-2 justify-content-center">
+            <div class="card col-12 col-sm-8 p-4 mb-5 shadow">
+                <p class="text-muted pb-2">Completá los datos y con gusto responderemos todas tus dudas</p>
+
+                <form action="">
+                    <div class="mb-4">
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresá tu nombre*" focus
+                            required>
+                    </div>
+
+                    <div class="mb-4">
+                        <input type="email" class="form-control" id="email" placeholder="Ingresá tu email*" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <input type="email" class="form-control" id="asunto" placeholder="Asunto*" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-secondary">Enviar</button>
+                </form>
+
+                <div class="text-muted p-2 text-center">
+                    <h6>También podés contactarnos por</h6>
+                </div>
+                <div class="d-flex justify-content-center display-6">
+                    <a href="https://facebook.com/lcestudiocontable" target="blank"><i
+                            class='bx bxl-facebook-circle me-3 text-muted'></i></a>
+                    <a href="https://instagram.com/lcestudiocontable" target="blank"><i
+                            class='bx bxl-instagram  me-3 text-muted'></i></a>
+                    <a href="https://www.linkedin.com/company/lcestudiocontable" target="blank"><i
+                            class='bx bxl-linkedin-square me-3 text-muted'></i></a>
+                    <a href="https://wa.me/1138303130" target="blank"><i class='bx bxl-whatsapp text-muted'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Formulario de Contacto -->
+
+
+
+    <!------------------------------ Fin Contenido principal -->
+
+    <!-- Boton ir arriba -->
+    <button type="button" class="button-up shadow"><i class='bx bxs-chevron-up'></i></button>
+
+    <!------------------------------  Footer -->
+    <footer class="pt-4">
+        <div class="container-fluid">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo-2.jpg" alt="" class="footer-img rounded mx-auto ps-4">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4 ps-4 ps-sm-0">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Links de interés</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <a class="text-decoration-none text-light py-1" href="http://">AFIP constancia de cuit</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-decoration-none text-light py-1" href="https://">ARBA
+                                Ingresos Brutos</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-decoration-none text-light py-1" href="https://">AGIP ingreso con clave
+                                ciudad</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-decoration-none text-light py-1" href="https://">ANSES Constancia de CUIL</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4 ps-4 ps-sm-0">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Navegación</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light" href="index.html">Inicio</a>
+                            </li>
+                            <li class="pb-2">
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light py-1" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light py-1" href="chef.html">Nuestros Servicios</a>
+                            </li>
+                            <li class="pb-2">
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light py-1" href="contact.html">Precios y Packs</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4 ps-4 ps-sm-0">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Contacto</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx bx-phone'></i><a class="text-decoration-none text-light py-1"
+                                href="tel:010-020-0340"> +549 11 3830
+                                3130</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx bx-mail-send'></i><a class="text-decoration-none text-light py-1"
+                                href="estudio.lc@hotmail.com">
+                                estudio.lc@hotmail.com</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex">
+                        <a href="https://facebook.com/lcestudiocontable" target="blank"><i
+                                class='bx bxl-facebook-circle fs-2 me-2 text-light'></i></a>
+                        <a href="https://instagram.com/lcestudiocontable" target="blank"><i
+                                class='bx bxl-instagram fs-2 me-2 text-light'></i></a>
+                        <a href="https://www.linkedin.com/company/lcestudiocontable" target="blank"><i
+                                class='bx bxl-linkedin-square fs-2 me-2 text-light'></i></a>
+                        <a href="https://wa.me/1138303130" target="blank"><i
+                                class='bx bxl-whatsapp fs-2 text-light'></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 mt-2 py-3">
+            <div class="container">
+                <div class="row col-12 justify-content-center">
+                    <div class="col-12 col-sm-2">
+                        <a href="https://www.argentina.gob.ar/justicia/igj" target="blank">
+                            <img src="assets/images/1.jpg" class="footer-link-img rounded" alt="">
+                        </a>
+
+                    </div>
+
+                    <div class="col-12 col-sm-2">
+                        <a href="http://">
+                            <img src="assets/images/2.jpg" class="footer-link-img rounded" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-sm-2">
+                        <a href="http://">
+                            <img src="assets/images/3.jpg" class="footer-link-img rounded" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-sm-2">
+                        <a href="http://">
+                            <img src="assets/images/4.jpg" class="footer-link-img rounded" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 mt-5 pt-3">
+                    <p class="text-center text-light light-300">
+                        © Copyright 2021 LC Estudio Contable | Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!------------------------------  Fin Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="assets/css/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  </body>
+    <!-- Animaciones -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Boton ir arriba -->
+    <script src="assets/js/scroll-top.js"></script>
+
+</body>
+
 </html>
